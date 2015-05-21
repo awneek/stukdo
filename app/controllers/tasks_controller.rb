@@ -11,7 +11,8 @@ class TasksController < ApplicationController
 
 
     @done = current_user.tasks.where(state: "done")
-    respond_with(@todo)
+    respond_with(@doing)
+    
   end
 
   def show
